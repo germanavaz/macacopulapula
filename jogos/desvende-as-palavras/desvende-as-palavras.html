@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desvende as palavras</title>
+</head>
+<body>
+    <h1>Arraste o personagem até o seu nome:</h1>
+
+    <div class="image-container">
+        <img id="img1" src="./img/pula-pula.png" data-target="box1" draggable="true" ondragstart="drag(event)" alt="Imagem 1">
+        <img id="img2" src="./img/nanica.png" data-target="box2" draggable="true" ondragstart="drag(event)" alt="Imagem 2">
+        <img id="img3" src="./img/papa-macaco.png" data-target="box3" draggable="true" ondragstart="drag(event)" alt="Imagem 3">
+        <img id="img4" src="./img/pateca.png" data-target="box4" draggable="true" ondragstart="drag(event)" alt="Imagem 4">
+        <img id="img5" src="./img/mama-macaca.png" data-target="box5" draggable="true" ondragstart="drag(event)" alt="Imagem 5">
+    </div>
+
+    <div class="boxes-container">
+        <div id="box1" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">Pula Pula</div>
+        <div id="box2" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">Nanica</div>
+        <div id="box3" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">Papá Macaco</div>
+        <div id="box4" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">Pateca</div>
+        <div id="box5" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">Mamá Macaca</div>
+
+        
+    </div>
+
+    <p id="message"></p>
+
+    <!-- Contêiner para a mensagem de parabéns e os botões -->
+    <div id="congratulations" style="display: none;">
+        <h2>Parabéns! Você acertou todas as imagens!</h2>
+        <button onclick="jogarNovamente()">Jogar novamente</button>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+
+    
+
+      <script src="script.js"></script>
+</body>
+</html>
