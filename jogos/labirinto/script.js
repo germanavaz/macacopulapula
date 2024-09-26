@@ -9,11 +9,11 @@ let positionY = 0;
 const step = 40; // Tamanho do movimento (igual ao tamanho do personagem)
 
 const walls = [
-    {x: 0, y: 80, width: 20, height: 20},
-    {x: 80, y: 50, width: 20, height: 200},
-    {x: 160, y: 120, width: 20, height: 200},
-    {x: 0, y: 0, width: 20, height: 300},
-    {x: 0, y: 240, width: 300, height: 20},
+    {x: 0, y: 170, width: 100, height: 20},
+    {x: 80, y: 60, width: 100, height: 20},
+    {x: 180, y: 150, width: 20, height: 170},
+    {x: 80, y: 0, width: 20, height: 100},
+    {x: 70, y: 300, width: 250, height: 20},
     // Adicione mais paredes aqui conforme necessário
 ];
 
